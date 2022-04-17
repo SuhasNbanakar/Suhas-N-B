@@ -2,15 +2,18 @@ class ShopRunner{
 
 	public static void main(String[] agrs)
 	{
-		CyberShop s1=new CyberShop();
-		s1.open(true);
-		//CyberShop s2=new TechZoneCyberShop();
-		//ss2.printing();
+		Shop shop3=new Shop();
+		CyberShop sh=new CyberShop(1997,"Suhas",20);
+		shop3.run(sh);
+		sh.open(true);
+		sh.close(true);
 		
-		
-		Shop shop=new Shop();
-		shop.run(s1);
-		
+		TechZoneCyberShop sh1=new TechZoneCyberShop(1996,"pratheek",30);
+		shop3.run(sh1);
+		sh1.connectToInternet(true);
+			
+		SatyaCyberShop sh2=new SatyaCyberShop(1999,"Shivu",15);
+		shop3.run(sh2);
 	}
 
 

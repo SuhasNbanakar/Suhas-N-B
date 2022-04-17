@@ -4,10 +4,6 @@ class CyberShop{
 	String ownerName;
 	int noOfSystems;
 	
-	CyberShop()
-	{
-		System.out.println("Runnig shop");
-	}
 	CyberShop(int since,String ownerName,int noOfSystems)
 	{
 		this.since=since;

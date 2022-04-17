@@ -1,8 +1,13 @@
-class satyaCyberShop extends CyberShop{
+class SatyaCyberShop extends CyberShop{
 	
+	
+	SatyaCyberShop(int since,String ownerName,int noOfSystems)
+	{
+		super(since,ownerName,noOfSystems);
+	}
 	void lamination()
 	{
-		System.out.println("Running lamination"+lamination);
+		System.out.println("Running lamination");
 	}
 	
 	

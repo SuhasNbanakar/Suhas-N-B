@@ -1,23 +1,24 @@
 class TechZoneCyberShop extends CyberShop{
-	@overriding//anottion
+	
+	TechZoneCyberShop(int since,String ownerName,int noOfSystems)
+	{
+		super(since,ownerName,noOfSystems);
+	}
+	
 	void printing()
 	{
-		System.out println("Running printing");
-		super.since=1996;
-		super.ownerName="Shivu";
-		super.noOfSystems=20;
-		this.connectToInternet(true);
+		System.out.println("Running printing");
 	}
-	}
+	
 	void connectToInternet(boolean Internetavailable)
 	{
 		if(Internetavailable)
 		{
-			System.out.println("System connectToInternet"+Internetavailable);
+			System.out.println("System connectToInternet");
 		}
 		else
 		{
-			System.out.println("System con't connectToInternet"+Internetavailable);
+			System.out.println("System con't connectToInternet");
 		}
 	}
 }
