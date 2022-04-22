@@ -1,0 +1,5 @@
+package com.suhas.encapsulation;
+
+enum Type {    GAS_COOKER,MILK_COOKER,ELECTRIC_COOKER,SOLAR_COOKER,STEAM_COOKER,RICE_COOKER
+
+}
