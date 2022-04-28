@@ -1,0 +1,10 @@
+package com.eclipse.imp;
+
+public class StringMethodThree {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

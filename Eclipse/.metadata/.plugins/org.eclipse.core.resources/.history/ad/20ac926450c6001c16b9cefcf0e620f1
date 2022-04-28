@@ -1,0 +1,12 @@
+package com.eclipse.imp;
+
+public class StringMethodFour {
+
+	public static void main(String[] args) {
+
+		String book="Good book Read Once Again";
+		String boo=book.substring(2,18);
+		System.out.println("running sub string = "+boo);
+	}
+
+}

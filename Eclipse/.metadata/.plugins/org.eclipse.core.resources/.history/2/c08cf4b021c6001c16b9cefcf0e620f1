@@ -1,0 +1,33 @@
+package com.eclipse.imp;
+
+public class StringMethodOne {
+
+	public static void main(String[] args) {
+
+		String brand=" Maruthi Suzuki";
+		String brand1=" Hyundai ";
+		
+		int	temp=brand.compareToIgnoreCase(brand1);
+		System.out.println("running compare to ignore case = "+temp);
+		
+		boolean temp1=brand.contentEquals(" Maruthi Suzuki ");
+		System.out.println("running content equals = "+temp1);
+		
+		char[] all= {'A','M','M','A'};
+		String temp2=String.copyValueOf(all);
+		System.out.println("running copy value of = "+temp2);
+		
+		String temp3=String.copyValueOf(all,0,4);
+		System.out.println("running copy value = "+temp3);
+		
+		boolean temp4=brand.endsWith("i");
+		System.out.println("running endswith = "+temp4);
+		
+		boolean temp5=brand.equals(brand1);
+		System.out.println("running equals = "+temp5);
+		
+		
+		
+	}
+
+}

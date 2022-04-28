@@ -1,0 +1,19 @@
+package com.eclipse.imp;
+
+public class StringMethodTwo {
+
+	public static void main(String[] args) {
+
+		String dis="new Shivamogga";
+		
+		int suh=dis.hashCode();
+		System.out.println("running hash code = "+suh);
+		
+		int suh1=dis.indexOf("A");
+		System.out.println("running index of = "+suh1);
+		
+		int suh2=dis.indexOf("a",1);
+		System.out.println("running index = "+suh2);
+	}
+
+}

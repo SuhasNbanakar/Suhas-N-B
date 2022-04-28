@@ -1,0 +1,17 @@
+package com.eclipse.imp;
+
+public class StringMethodThree {
+
+	public static void main(String[] args) {
+		
+		String country="I Love My India";
+		
+		int coun=country.lastIndexOf("ve",3);
+		System.out.println("running last index is = "+coun);
+		
+		
+		
+		
+	}
+
+}

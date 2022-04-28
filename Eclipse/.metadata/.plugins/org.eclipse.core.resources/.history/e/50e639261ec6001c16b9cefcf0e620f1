@@ -1,0 +1,16 @@
+package com.eclipse.imp;
+
+public class StringMethodOne {
+
+	public static void main(String[] args) {
+
+		String brand=" Maruthi Suzuki ";
+		String brand1=" Hyundai ";
+		
+		int	temp=brand.compareToIgnoreCase(brand1);
+		System.out.println("running compare to ignore case = "+temp);
+		
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.eclipse.imp;
+
+public class StringMethodTwo {
+
+	public static void main(String[] args) {
+
+		String dis="Shivamogga";
+		int suh=dis.hashCode();
+		System.out.println("running hash code = "+suh);
+	}
+
+}

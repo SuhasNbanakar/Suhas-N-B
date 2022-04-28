@@ -1,0 +1,38 @@
+package com.eclipse.imp;
+
+import java.util.Locale;
+
+public class StringMethod {
+
+	public static void main(String[] args) {
+
+		String area="Rajajinagara";
+		
+		String obj=area.toLowerCase();
+		System.out.println(obj);
+		
+		char obj1=area.charAt(3);
+		System.out.println(obj1);
+				
+		String obj2=area.concat("1");
+		System.out.println(obj2);
+		
+		String all ="SUHAS" ;
+		String obj3=all.toLowerCase();
+		System.out.println(obj3);
+		
+		String obj4=area.toUpperCase();
+		System.out.println(obj4);
+		
+		boolean obj5=area.contains(obj4);
+		System.out.println(obj5);
+		
+		
+		//static String	copyValueOf(char[] data)
+		
+		
+		
+		
+	}
+
+}

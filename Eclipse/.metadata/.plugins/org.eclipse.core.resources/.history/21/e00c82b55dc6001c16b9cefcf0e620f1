@@ -1,0 +1,45 @@
+package com.eclipse.imp;
+
+public class StringMethodFour {
+
+	public static void main(String[] args) {
+
+		String book="  Good book Read Once Again ";
+		
+		String boo=book.substring(2,20);// op= od book Read Once
+		System.out.println("running sub string = "+boo);
+		
+		String boo1=book.toString();//op= Good book Read Once Again
+		System.out.println("running to string = "+boo1);
+		
+		String boo2=book.trim();// starting and end blank space is trim  
+		System.out.println("running trim = "+boo2);
+		
+		boolean book1=true;
+		String boo3=String.valueOf(book1);
+		System.out.println("running valueof = "+boo3);
+		 
+		char ch='s';
+		String boo4=String.valueOf(ch);
+		System.out.println("running char value of = "+boo4);
+		 
+		double d=35.4;
+		String boo5=String.valueOf(d);
+		System.out.println("running double value of = "+boo5);
+		
+		float f=25.56f;
+		String boo6=String.valueOf(f);
+		System.out.println("running float value of = "+boo6);
+		 
+		 int i=45;
+		 String boo7=String.valueOf(i);
+		 System.out.println("running int value of = "+boo7);
+		 
+		 long l=54l;
+		 String boo8=String.valueOf(l);
+		 System.out.println("running long value of = "+boo8);
+		 
+		// String	valueOf(Object obj)
+	}
+
+}

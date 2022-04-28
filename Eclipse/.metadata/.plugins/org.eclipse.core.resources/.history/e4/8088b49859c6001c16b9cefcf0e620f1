@@ -1,0 +1,33 @@
+package com.eclipse.imp;
+
+public class StringMethodFour {
+
+	public static void main(String[] args) {
+
+		String book="Good book Read Once Again";
+		
+		String boo=book.substring(2,20);// op= od book Read Once
+		System.out.println("running sub string = "+boo);
+		
+		String boo1=book.toString();
+		System.out.println("running to string = "+boo1);
+		
+		String boo2=book.trim();
+		System.out.println("running trim = "+boo2);
+		
+		// String	valueOf(boolean b)
+		 
+		// String	valueOf(char c)
+		 
+		// String	valueOf(double d)
+		
+		// String	valueOf(float f)
+		 
+		 //String	valueOf(int i)
+		
+		 //String	valueOf(long l)
+		 
+		// String	valueOf(Object obj)
+	}
+
+}

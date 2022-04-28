@@ -1,0 +1,11 @@
+package com.eclipse.imp;
+
+public class StringMethodOne {
+
+	public static void main(String[] args) {
+
+		String brand=" Maruthi Suzuki "
+		
+	}
+
+}

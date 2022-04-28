@@ -1,0 +1,22 @@
+package com.eclipse.imp;
+
+public class StringMethodThree {
+
+	public static void main(String[] args) {
+		
+		String country="I Love My India";
+		
+		int coun=country.lastIndexOf("ve",6);//ve is last index of string op=4
+		System.out.println("running last index is = "+coun);
+		
+		int coun1=country.length();//total length op=15
+		System.out.println("running length = "+coun1);
+		
+
+		boolean coun2=country.matches("I");
+		System.out.println("running matches = "+coun2);
+		
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.eclipse.imp;
+
+public class StringMethod {
+
+	public static void main(String[] args) {
+
+		String area="Rajajinagara";
+		String obj=area.toLowerCase();
+		System.out.println(obj);
+		//Converts all of the characters in this String to lower case using the rules of the default locale
+		
+	}
+
+}
