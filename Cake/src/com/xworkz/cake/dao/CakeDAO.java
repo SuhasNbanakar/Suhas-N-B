@@ -142,27 +142,26 @@ public class CakeDAO {
 		return null;
 	}
 
-	public CakeDTO findPriceById(Integer id) {
+	public Double findPriceById(Integer id) {
 		for (int index = 0; index < dtos.length; index++) {
 			CakeDTO dto8 = dtos[index];
 			System.out.println("price ");
 			if (dto8.getId().equals(id)) {
-				System.out.println("price from id = " + dto8.getPrice());
-				break;
-			} else {
+				return dto8.getPrice();
+			}
+			else {
 				System.out.println("price not find " + id);
 			}
 		}
 		return null;
 	}
 
-	public CakeDTO findFlavourById(Integer id) {
+	public Flavour findFlavourById(Integer id) {
 		for (int index = 0; index < dtos.length; index++) {
 			CakeDTO dto9 = dtos[index];
 			System.out.println("flavour by id " + id);
 			if (dto9.getId().equals(id)) {
-				System.out.println("flavour from by id " + dto9.getFlavour());
-				break;
+				return dto9.getFlavour();
 			} else {
 				System.out.println("flavour not found " + id);
 			}
@@ -170,18 +169,18 @@ public class CakeDAO {
 		return null;
 	}
 
-	public CakeDTO findAll() {
+	public CakeDTO[] findAll() {
 
 		for (int index = 0; index < this.dtos.length; index++) {
 			CakeDTO dto10 = dtos[index];
 
 			if (dto10 != null) {
-				for (int loop = 0; loop < dtos.length; loop++) {
-					System.out.println("All Conditions are Sattisfied" + dtos[loop]);
-
+					System.out.println("All Conditions are Sattisfied");
+					return dtos;
 				}
-				break;
-			} else {
+				 
+			else 
+			{
 				System.out.println("Cannot find The Cake");
 			}
 

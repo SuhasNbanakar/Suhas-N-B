@@ -87,10 +87,10 @@ public class CakeRunner {
 		cakeDAO.findByIdAndFlavour(3, Flavour.CHOCOLATE);
 		System.out.println("****&&&&&&&&&&&&&&&&&&&&&&*****");
 
-		cakeDAO.findPriceById(2);
+		cakeDAO.findPriceById(3);
 		System.out.println("****&&&&&&&&&&&&&&&&&&&&&&*****");
 
-		cakeDAO.findFlavourById(3);
+		cakeDAO.findFlavourById(5);
 		System.out.println("****&&&&&&&&&&&&&&&&&&&&&&*****");
 
 		cakeDAO.findAll();
