@@ -145,7 +145,7 @@ public class SongRunner {
 
 		System.out.println("********************************************");
 
-		SongDTO[] temp11 = songDAO.findTotal();
+		int temp11 = songDAO.findTotal();
 		System.out.println(temp11);
 	}
 
