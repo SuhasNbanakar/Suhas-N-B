@@ -33,7 +33,7 @@ public class CakeDAO {
 			if (dto.getFlavour().equals(flavour)) {
 				dto.setPrice(priceToUpdate);
 				System.out.println("Updated Price " + priceToUpdate);
-				break;
+				
 			} else {
 				System.out.println("Price Cannor Be Updated For The Given Flavour");
 			}
