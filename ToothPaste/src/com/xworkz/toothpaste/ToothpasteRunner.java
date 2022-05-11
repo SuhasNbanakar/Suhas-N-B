@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import com.xworkz.toothpaste.constants.Color;
 import com.xworkz.toothpaste.constants.Quantity;
 import com.xworkz.toothpaste.dto.ToothpasteDTO;
+import com.xworkz.toothpaste.exceptions.ToothpasteOutOfStock;
 import com.xworkz.toothpaste.service.ToothpasteService;
 
 public class ToothpasteRunner {
@@ -71,21 +72,37 @@ public class ToothpasteRunner {
 		tooth5.setMfgDate(LocalDate.of(2022, 8, 27));
 		tooth5.setExpiryDate(LocalDate.of(2023, 7, 22));
 
-		ToothpasteService service = new ToothpasteService();
-		boolean saved = service.validateAndSave(tooth);
-		System.out.println(saved);
+		try {
+			ToothpasteService service = new ToothpasteService();
+			boolean saved = service.validateAndSave(tooth);
+			System.out.println(saved);
 
-		saved = service.validateAndSave(tooth1);
-		System.out.println(saved);
-		saved = service.validateAndSave(tooth2);
-		System.out.println(saved);
-		saved = service.validateAndSave(tooth3);
-		System.out.println(saved);
-		saved = service.validateAndSave(tooth4);
-		System.out.println(saved);
-		saved = service.validateAndSave(tooth2);
-		System.out.println(saved);
+			saved = service.validateAndSave(tooth1);
+			System.out.println(saved);
+			saved = service.validateAndSave(null);
+			System.out.println(saved);
+			saved = service.validateAndSave(tooth3);
+			System.out.println(saved);
+			saved = service.validateAndSave(tooth4);
+			System.out.println(saved);
+			saved = service.validateAndSave(tooth2);
+			System.out.println(saved);
+
+			System.out.println("------------**********-------------");
+		} catch (ToothpasteOutOfStock e) {
+
+			System.out.println("a =" + e.fillInStackTrace());
+			System.out.println("b =" + e.getCause());
+			System.out.println("c =" + e.getMessage());
+			System.out.println("d =" + e.getStackTrace());
+			System.out.println("e =" + e.getSuppressed());
+			System.out.println("f =" + e.toString());
+			System.out.println("g =" + e.getLocalizedMessage());
+			System.out.println("h =" + e.initCause(null));
+			System.out.println("i =" + e.hashCode());
+			System.out.println("j ="+e.getClass());
+
+		}
 
 	}
-
 }
