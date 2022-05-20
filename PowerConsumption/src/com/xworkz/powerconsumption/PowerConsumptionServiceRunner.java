@@ -31,7 +31,7 @@ public class PowerConsumptionServiceRunner {
 			serv.validateAndSave(
 					new PowerConsumptionDTO(5, 79D, 4.9D, LocalDate.of(2022, 05, 24), 150D, "Prabhu", "MESCOM"));
 			serv.validateAndSave(
-					new PowerConsumptionDTO(6, 80.1D, 5D, LocalDate.of(2022, 05, 24), 155D, "Raju", "BESCOM"));
+					new PowerConsumptionDTO(6, 80.1D, 5D, LocalDate.of(2022, 05, 24), 155D, "Arpitha", "BESCOM"));
 			serv.validateAndSave(
 					new PowerConsumptionDTO(7, 80.5D, 5.1D, LocalDate.of(2022, 05, 24), 150D, "Sandeep", "GESCOM"));
 			serv.validateAndSave(
@@ -47,11 +47,11 @@ public class PowerConsumptionServiceRunner {
 			serv.validateAndSave(
 					new PowerConsumptionDTO(13, 82.1D, 5.7D, LocalDate.of(2022, 05, 24), 151D, "Rajshekar", "MESCOM"));
 			serv.validateAndSave(
-					new PowerConsumptionDTO(14, 82.4D, 5.8D, LocalDate.of(2022, 05, 24), 155D, "Ravi", "GESCOM"));
+					new PowerConsumptionDTO(14, 82.4D, 5.8D, LocalDate.of(2022, 05, 24), 155D, "Ravi s", "GESCOM"));
 			PowerConsumptionDTO consu15 = new PowerConsumptionDTO(15, 82.5D, 5.9D, LocalDate.of(2022, 05, 24), 153D,
 					"Basavaraj", "BESCOM");
 			PowerConsumptionDTO consu16 = new PowerConsumptionDTO(16, 82.8D, 6D, LocalDate.of(2022, 05, 24), 152D,
-					"Giri", "HESCOM");
+					"Giriraj", "HESCOM");
 			PowerConsumptionDTO consu17 = new PowerConsumptionDTO(17, 82.1D, 6.1D, LocalDate.of(2022, 05, 24), 150D,
 					"Sundra", "BESCOM");
 			PowerConsumptionDTO consu18 = new PowerConsumptionDTO(18, 80D, 6.2D, LocalDate.of(2022, 05, 24), 150D,
@@ -59,9 +59,9 @@ public class PowerConsumptionServiceRunner {
 			PowerConsumptionDTO consu19 = new PowerConsumptionDTO(19, 76.5D, 6.3D, LocalDate.of(2022, 05, 24), 150D,
 					"Kiran", "HESCOM");
 			PowerConsumptionDTO consu20 = new PowerConsumptionDTO(20, 75.4D, 6.4D, LocalDate.of(2022, 05, 24), 150D,
-					"Anil", "MESCOM");
+					"Anilkumar", "MESCOM");
 			PowerConsumptionDTO consu21 = new PowerConsumptionDTO(21, 74.1D, 6.5D, LocalDate.of(2022, 05, 24), 150D,
-					"Uma", "BESCOM");
+					"UmaReaddy", "BESCOM");
 			PowerConsumptionDTO consu22 = new PowerConsumptionDTO(22, 76.8D, 6.6D, LocalDate.of(2022, 05, 24), 150D,
 					"Shivakumar", "GESCOM");
 			PowerConsumptionDTO consu23 = new PowerConsumptionDTO(23, 77.3D, 6.7D, LocalDate.of(2022, 05, 24), 150D,
@@ -75,27 +75,37 @@ public class PowerConsumptionServiceRunner {
 					consu23, consu24, consu25 };
 			serv.validateAndSaveMultiple(name);
 
+			System.out.println("************************************************");
 			serv.findByName("Kiran");
+			System.out.println("************************************************");
 
-			// serv.saveMultiple([5]);
-
-			// serv.deleteByCustomerName("Sanjana");
-
-			// serv.deleteByDivision("HESCOM");
-
-			serv.updateMinChargeByDivision("BESCOM", 151D);
-
-			serv.updateRatePerUnitByDivision("MESCOM", 5.9D);
+//			serv.updateMinChargeByDivision("BESCOM", 151D);
+//			serv.printDetails();
+//			System.out.println("************************************************");
+//
+//			serv.updateRatePerUnitByDivision("MESCOM", 5.9D);
+//			serv.printDetails();
+			System.out.println("************************************************");
 
 			serv.findByDivision("GESCOM");
+			System.out.println("************************************************");
 
 			serv.findByCustomerNameAndDivision("Rajshekar", "MESCOM");
+			System.out.println("************************************************");
 
 			serv.findRatePerUnitByDivision("HESCOM");
+			System.out.println("************************************************");
 
-			serv.findDueAmountByCustomerName("Raju");
+			serv.findDueAmountByCustomerName("umaReddy");
+			System.out.println("************************************************");
+//
+//			serv.deleteByCustomerName("Sanjana");
+//			serv.printDetails();
+			System.out.println("************************************************");
 
-			serv.printDetails();
+//			serv.deleteByDivision("HESCOM");
+//			serv.printDetails();
+			System.out.println("************************************************");
 
 		} catch (InvalidDataException e) {
 			System.out.println("message" + e.getMessage());

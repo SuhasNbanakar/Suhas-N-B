@@ -23,9 +23,9 @@ public interface PowerConsumptionService {
 
 	void deleteByDivision(String division);// many delete
 
-	Double updateMinChargeByDivision(String division, double min);
+	void updateMinChargeByDivision(String division, Double min);
 
-	Double updateRatePerUnitByDivision(String division, double newRate);
+	void updateRatePerUnitByDivision(String division, Double newRate);
 
 	Optional<PowerConsumptionDTO[]> findByDivision(String division);
 
