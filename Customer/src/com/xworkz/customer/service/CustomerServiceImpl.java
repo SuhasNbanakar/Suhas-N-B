@@ -24,24 +24,21 @@ public class CustomerServiceImpl implements CustomerService {
 			Gender gender = dto.getGender();
 			String occupation = dto.getOccupation();
 
-			if (id != null && id > 0) {
+			if (!(id != null && id > 0)) {
 				System.out.println("id is valid");
-			} else {
-				System.err.println("id is invalid");
+				return false;
 			}
 
-			if (name != null && name.length() > 3 && name.length() < 20
-					&& !name.matches(".*[0-9,!@#$%^&*()_+{}><.;,<>].*")) {
+			if (!(name != null && name.length() > 3 && name.length() < 20
+					&& !name.matches(".*[0-9,!@#$%^&*()_+{}><.;,<>].*"))) {
 				System.out.println("name is valid ");
-			} else {
-				System.err.println("name is invalid ");
+				return false;
 			}
 
-			if (email != null && email.length() > 3 && name.length() < 30 && email.endsWith(".com")
-					&& email.matches(".*[@].*")) {
+			if (!(email != null && email.length() > 3 && name.length() < 30 && email.endsWith(".com")
+					&& email.matches(".*[@].*"))) {
 				System.out.println("email is valid");
-			} else {
-				System.err.println("email is invalid");
+
 			}
 
 			if (dob != null && dob.isBefore(LocalDate.now())) {
@@ -55,11 +52,10 @@ public class CustomerServiceImpl implements CustomerService {
 				System.err.println("gender is invalid");
 			}
 
-			if (occupation != null && occupation.length() > 3 && occupation.length() < 30
-					&& !occupation.matches(".*[0-9,!@#$%^&*()_+{}><.;,<>].*")) {
-				System.out.println("occupation is valid ");
-			} else {
+			if (!(occupation != null && occupation.length() > 3 && occupation.length() < 30
+					&& !occupation.matches(".*[0-9,!@#$%^&*()_+{}><.;,<>].*"))) {
 				System.err.println("occupation is invalid");
+				return false;
 			}
 
 			AddressDTO addressDTO = dto.getAddressDTO();

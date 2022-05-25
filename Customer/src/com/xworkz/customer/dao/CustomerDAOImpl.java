@@ -9,7 +9,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 
 	@Override
 	public boolean save(CustomerDTO dto) {
-		if (this.index > this.cust.length) {
+		if (this.index < this.cust.length) {
 			this.cust[index] = dto;
 			this.index++;
 			System.out.println("dto save = " + dto);
